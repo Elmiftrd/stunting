@@ -1,4 +1,4 @@
-CREATE TABLE dinkes_1 (
+_1CREATE TABLE dinkes_1 (
     kecamatan VARCHAR(100),
     desa VARCHAR(100),
     nama VARCHAR(100),
@@ -16,7 +16,7 @@ CREATE TABLE dinkes_1 (
 
 
 
-INSERT INTO data_dinkes (kecamatan, desa, nama, umur_bulan, kategori_umur, tb_m, bb_kg, imt, jenis_kelamin, penghasilan, pekerjaan, tahun, keterangan) 
+INSERT INTO dinkes_1 (kecamatan, desa, nama, umur_bulan, kategori_umur, tb_m, bb_kg, imt, jenis_kelamin, penghasilan, pekerjaan, tahun, keterangan) 
 VALUES
 ('Gedong Tataan', 'Negeri Sakti', 'Aiden Smith', 48, 'Balita', 10.20, 0.78, 0.007497, 'L', 'Rp3.934.000', 'Petani', 2021, 'Normal'),
 ('Gedong Tataan', 'Cipadang', 'Emily Johnson', 27, 'Balita', 8.50, 0.72, 0.009965, 'P', 'Rp1.982.000', 'Guru', 2021, 'Normal'),
