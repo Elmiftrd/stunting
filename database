@@ -119,14 +119,17 @@ VALUES
     ('Way Ratai', 'Bunut', 'Nolan Sanders', 5, 'Bayi', 15.00, 0.92, 0.004088889, 'L', 'Rp4.500.000', 'Pengusaha', 2021, 'Stunting'),
     ('Way Ratai', 'Poncorejo', 'Alexa Price', 12, 'Balita', 11.80, 0.83, 0.005960931, 'P', 'Rp3.000.000', 'Seniman', 2021, 'Stunting')
 
-
+persentase penderita stunting pertahun
 SELECT Tahun, 
        SUM(Jumlah_Penderita_Stunting) / SUM(Jumlah_Anak_Diperiksa) * 100 AS Persentase_Stunting_Tahun
 FROM dinkes_3
 GROUP BY Tahun;
 
+persentase penderita stunting perkecamatan
 SELECT d1.Kecamatan, d1.Desa, d1.Tahun, 
        SUM(d3.Jumlah_Penderita_Stunting) / SUM(d3.Jumlah_Anak_Diperiksa) * 100 AS Persentase_Stunting
 FROM dinkes_1 d1
 JOIN dinkes_3 d3 ON d1.Tahun = d3.Tahun
 GROUP BY d1.Kecamatan, d1.Desa, d1.Tahun;
+
+
